@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Guven2019</title>
+    <title>Guvenbusinessgroup | <%= yield(:title) %></title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +9,12 @@
   </head>
 
   <body>
-    <%= yield %>
+      <%= render 'layouts/header' %>
+      <% flash.each do |key, value| %>
+        <div class="notification notice closeable alert alert-<%= key %>"><%= value %></div>
+      <% end %>
+      <%= yield %>
+      <%= render 'layouts/footer'%>
+      <%= debug(params) if Rails.env.development? %>
   </body>
 </html>
