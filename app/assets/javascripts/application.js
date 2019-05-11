@@ -13,3 +13,14 @@
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
+//= require jquery3
+//= require bootstrap
+//= require mobile-nav
+//= require lightbox
+//= require wow
+//= require waypoints.min
+//= require owl.carousel
+//= require isotope.pkgd
+//= require easing
+//= require counterup.min
+//= require contactform
