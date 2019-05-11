@@ -1,3 +1,4 @@
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -12,4 +13,13 @@
  *
  *= require_tree .
  *= require_self
+ *= require bootstrap.min
+ *= require ionicons
+ *= require font-awesome
+ *= require lightbox
+ *= require animate
+ *= require owl.carousel
  */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
