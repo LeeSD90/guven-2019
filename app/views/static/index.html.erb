@@ -11,9 +11,6 @@
 
 <body>
   <div id="container">
-  <% flash.each do |key, value| %>
-    <div class="notification notice closeable alert alert-<%= key %>"><%= value %></div>
-  <% end %>
   <div id="page-content">
       <div id="left-grouping">
         <%= image_tag('logo.png', id: "logo") %>
@@ -28,6 +25,9 @@
             <%= email_field_tag 'email', '', :placeholder=>"Enter your email here" %>
             <%= submit_tag "submit", :value=>"Notify Me!", :id=>"notify" %>
           <% end %>
+        <% flash.each do |key, value| %>
+        <div class="notification notice closeable alert alert-<%= key %>"><%= value %></div>
+        <% end %>
         </div>
       </div>
     </div>

@@ -104,6 +104,11 @@ html, body {
     }
   }
 
+  .notification{
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0 10px 0 10px;
+  }
+
 @media only screen and (min-width: 1920px){
   #container {
     background: image-url("bg.png") no-repeat;
