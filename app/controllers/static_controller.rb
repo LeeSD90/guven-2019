@@ -14,7 +14,6 @@ class StaticController < ApplicationController
   def notify
     email = params[:email]
     AdminMailer.notification_mail(email).deliver
-    flash[:success] = "Thank you for your interest! We will be in touch soon."
-    redirect_to root_url
+    flash.now[:success] = "Thank you for your interest! We will be in touch soon."
   end
 end
