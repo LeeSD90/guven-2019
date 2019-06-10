@@ -1,5 +1,5 @@
 class AdminMailer < ApplicationMailer
-  default from: ENV["ADMIN_MAIL"]
+  default from: ENV["ADMIN_GMAIL"]
 
   def notification_mail(email)
     @email = email
