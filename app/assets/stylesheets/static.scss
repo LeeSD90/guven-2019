@@ -1,3 +1,115 @@
 // Place all the styles related to the static controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  color: white;
+}
+
+#container {
+  background: image-url("bg.png") no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: bottom, center;
+}
+
+
+#page-content {
+  display: flex;
+  height: 95vh;
+  width: 100vw;
+  margin-bottom: 1.2em;
+}
+
+#left-grouping {
+  margin-top: 2.1em;
+  flex-basis: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  #logo {
+    width: 60%;
+  }
+}
+
+#right-grouping {
+  margin-top: 2.1em;
+  flex-basis: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 1.5em;
+  h1 {
+    flex-basis: 10%;
+    font-size: 4.5em;
+    line-height: 1em;
+    font-weight: 330;
+    text-transform: uppercase;
+    margin-top: 1.1em;
+    margin-bottom: 1.1em;
+  }
+
+  h2 {
+    flex-basis: 15%;
+    font-weight: 300;
+    font-size: 3.5em;
+    flex-grow: 2;
+  }
+}
+
+  input#email {
+    box-sizing: border-box;
+    display: block;
+    padding: 10px;
+    margin-bottom: 0.8em;
+    height: 2.8em;
+    border: none;
+    font-size: medium;
+    width: 100%;
+  }
+
+  button#notify {
+    padding: 10px;
+    background-color: #D2AC67;
+    border: none;
+    color: white;
+    height: 2.8em;
+    text-transform: uppercase;
+    font-size: medium;
+    width: 100%;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+  
+  p {
+    font-weight: 300;
+    font-size: 2.2em;
+  }
+
+  .copy{
+    font-weight: 300;
+    font-size: larger;
+  }
+  .email-us{
+    font-size: medium;
+    input::placeholder {
+      font-size: 1.1em;
+    }
+  }
+
+@media only screen and (min-width: 1920px){
+  #container {
+    background: image-url("bg.png") no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: bottom, center;
+  }
+}
