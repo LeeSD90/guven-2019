@@ -10,4 +10,11 @@ class StaticController < ApplicationController
       render file: "#{Rails.root}/public/404", status: :not_found
     end
   end
+
+  def notify
+    email = params[:email]
+    AdminMailer.notification_mail(email).deliver
+    flash[:success] = "Thank you for your interest! We will be in touch soon."
+    redirect_to root_url
+  end
 end

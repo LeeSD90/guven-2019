@@ -10,6 +10,9 @@
 <title>We're Launching Soon</title>
 
 <body>
+  <% flash.each do |key, value| %>
+        <div class="notification notice closeable alert alert-<%= key %>"><%= value %></div>
+  <% end %>
   <div id="container">
   <div id="page-content">
       <div id="left-grouping">
@@ -21,11 +24,13 @@
         <h2>we're lanching soon</h2>
         <div class="email-us">
           <p>Ready to start your growth journey?</p>
-          <input id="email" placeholder= "Enter your email here" type="text"></input>
-          
-          <button id="notify">Notify Me!</button>
+          <%= form_tag '/notify' do %>
+            <%= email_field_tag 'email', '', :placeholder=>"Enter your email here" %>
+            <%= submit_tag "submit", :value=>"Notify Me!", :id=>"notify" %>
+          <% end %>
         </div>
       </div>
     </div>
   </div>
 </body>
+<%= debug(params) if Rails.env.development? %>
