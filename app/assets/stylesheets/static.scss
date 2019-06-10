@@ -109,6 +109,41 @@ html, body {
     padding: 10px 0 10px 0;
   }
 
+  #mob-logo, #mob-foot {
+    display: none;
+  }
+
+@media only screen and (max-width: 1500px){
+  #container {
+    background: image-url("bg-dark.jpg") no-repeat;
+  }
+  #page-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #right-grouping{
+    margin:0;
+    flex-basis: initial;
+    justify-content: center;
+    align-items: center;
+  }
+  #left-grouping{
+    display:none;
+  }
+  #mob-logo, #mob-foot{
+    display: block;
+  }
+  #mob-foot{
+    margin-top: 2.5em;
+  }
+  #mob-logo{
+    img{
+      height: 20em;
+    }
+  }
+}
+
 @media only screen and (min-width: 1920px){
   #container {
     background: image-url("bg.png") no-repeat;
