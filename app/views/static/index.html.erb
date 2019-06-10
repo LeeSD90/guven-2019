@@ -10,10 +10,10 @@
 <title>We're Launching Soon</title>
 
 <body>
-  <% flash.each do |key, value| %>
-        <div class="notification notice closeable alert alert-<%= key %>"><%= value %></div>
-  <% end %>
   <div id="container">
+  <% flash.each do |key, value| %>
+    <div class="notification notice closeable alert alert-<%= key %>"><%= value %></div>
+  <% end %>
   <div id="page-content">
       <div id="left-grouping">
         <%= image_tag('logo', id: "logo") %>
