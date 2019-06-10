@@ -15,6 +15,6 @@ class StaticController < ApplicationController
     email = params[:email]
     AdminMailer.notification_mail(email).deliver
     flash.now[:success] = "Thank you for your interest! We will be in touch soon."
-    render :index
+    render :index, :layout => false
   end
 end
