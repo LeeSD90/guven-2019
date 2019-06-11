@@ -113,34 +113,18 @@ html, body {
     display: none;
   }
 
-@media only screen and (max-width: 370px){
-  *{
-    font-size: 13pt !important;
-  }
-  img{
-    height: 150px !important;
-  }
-  input{
-    height: 35px !important;
-    &::placeholder{
-      font-size: 12pt !important;
+
+
+  @media only screen and (min-width: 1501px){
+    #container {
+      background: image-url("bg.png") no-repeat;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      background-position: bottom, center;
     }
   }
-}
-
-@media only screen and (max-width: 1000px){
-  *{
-    font-size: 8pt;
-    margin-top: 0 !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    margin-bottom: 0.5em !important;
-    text-align: center;
-  }
-  .email-us{
-    width: 80%;
-  }
-}
 
 @media only screen and (max-width: 1500px){
   #container {
@@ -173,13 +157,34 @@ html, body {
   }
 }
 
-@media only screen and (min-width: 1501px){
-  #container {
-    background: image-url("bg.png") no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-position: bottom, center;
+@media only screen and (max-width: 1000px){
+  #right-grouping, #mob-logo, #mob-foot, #left-grouping{
+    font-size: 10px !important;
+    margin-top: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-bottom: 0.5em !important;
+    text-align: center;
+  }
+  .email-us{
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  #right-grouping, #mob-logo, #left-grouping{
+    font-size: 8px !important;
+  }
+  #mob-foot{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 350px){
+  *{
+    font-size: 14px !important;
+  }
+  input{
+    height: 35px !important;
   }
 }
