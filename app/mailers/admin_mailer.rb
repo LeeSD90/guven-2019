@@ -3,7 +3,6 @@ class AdminMailer < ApplicationMailer
 
   def notification_mail(email)
     @email = email
-    puts "sendingggg mail!"
     mail(to: ENV["ADMIN_MAIL"], subject: 'New Sign up from - ' + @email)
   end
 end
