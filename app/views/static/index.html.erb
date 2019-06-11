@@ -1,38 +1,40 @@
 <% provide(:title, 'Under Construction') %>
 <!doctype html>
-<head>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-  <meta charset="utf-8">
-  <meta content="initial-scale=1.0" name="viewport">
-  <meta content="" name="keywords">
-  <meta content="" name="description">
-  <title>We're Launching Soon</title>
-</head>
+<html lang="en">
+  <head>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <meta charset="utf-8">
+    <meta content="initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <title>We're Launching Soon</title>
+  </head>
 
-<body>
-  <div id="container">
-  <div id="page-content">
-      <div id="mob-logo"><%= image_tag('logo.png', id: "logo") %></div>
-      <div id="left-grouping">
-        <%= image_tag('logo.png', id: "logo") %>
-        <div class="copy">Guven business group &copy; 2019 All Rights Reserved</div>
-      </div>
-      <div id="right-grouping">
-        <h1>Your Success Begins With Us</h1>
-        <h2>we're lanching soon</h2>
-        <div class="email-us">
-          <p>Ready to start your growth journey?</p>
-          <%= form_tag '/notify' do %>
-            <%= email_field_tag 'email', '', :placeholder=>"Enter your email here" %>
-            <%= submit_tag "submit", :value=>"Notify Me!", :id=>"notify" %>
-          <% end %>
-        <% flash.each do |key, value| %>
-        <div class="notification notice closeable alert alert-<%= key %>"><%= value %></div>
-        <% end %>
+  <body>
+    <div id="container">
+    <div id="page-content">
+        <div id="mob-logo"><%= image_tag('logo.png', id: "mob-imglogo") %></div>
+        <div id="left-grouping">
+          <%= image_tag('logo.png', id: "logo") %>
+          <div class="copy">Guven business group &copy; 2019 All Rights Reserved</div>
         </div>
+        <div id="right-grouping">
+          <h1>Your Success Begins With Us</h1>
+          <h2>we're lanching soon</h2>
+          <div class="email-us">
+            <p>Ready to start your growth journey?</p>
+            <%= form_tag '/notify' do %>
+              <%= email_field_tag 'email', '', :placeholder=>"Enter your email here" %>
+              <%= submit_tag "submit", :value=>"Notify Me!", :id=>"notify" %>
+            <% end %>
+          <% flash.each do |key, value| %>
+          <div class="notification notice closeable alert alert-<%= key %>"><%= value %></div>
+          <% end %>
+          </div>
+        </div>
+        <div id="mob-foot"><div class="copy">Guven business group &copy; 2019 All Rights Reserved</div></div>
       </div>
-      <div id="mob-foot"><div class="copy">Guven business group &copy; 2019 All Rights Reserved</div></div>
     </div>
-  </div>
-</body>
-<%= debug(params) if false %>
+  </body>
+  <%= debug(params) if false %>
+</html>
