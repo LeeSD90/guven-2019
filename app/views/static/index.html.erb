@@ -13,14 +13,16 @@
   <body>
     <div id="container">
     <div id="page-content">
-        <div id="left-grouping">
-          <%= image_tag('logo.png', id: "logo") %>
-          <div class="copy">Guven business group &copy; 2019 All Rights Reserved</div>
+        <div id="top-grouping">
+          <div class="logo-box"><%= image_tag('logo.png', id: "logo") %></div>
+          <div class="head-text">
+            <h1>Your Success Begins With Us</h1>
+            <h2>we're lanching soon</h2>
+          </div>
         </div>
-        <div id="right-grouping">
+        <div id="bottom-grouping">
+        <div class="copy">Guven business group &copy; 2019 All Rights Reserved</div>
         <div id="mob-logo"><%= image_tag('logo.png', id: "mob-imglogo") %></div>
-          <h1>Your Success Begins With Us</h1>
-          <h2>we're lanching soon</h2>
           <div class="email-us">
             <p>Ready to start your growth journey?</p>
             <%= form_tag '/notify' do %>
