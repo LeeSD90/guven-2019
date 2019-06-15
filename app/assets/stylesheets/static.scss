@@ -96,7 +96,7 @@ html, body {
 
   .copy{
     font-weight: 300;
-    font-size: larger;
+    font-size: 0.8em;
   }
   .email-us{
     font-size: medium;
@@ -131,6 +131,9 @@ html, body {
   }
 
 @media only screen and (max-width: 1000px){
+  .copy{
+    font-size: 1.2em;
+  }
   #container {
     background: image-url("bg-dark.jpg") no-repeat;
   }
