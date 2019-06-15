@@ -116,7 +116,7 @@ html, body {
 
 
 
-  @media only screen and (min-width: 1501px){
+  @media only screen and (min-width: 1000px){
     #container {
       background: image-url("bg.png") no-repeat;
       -webkit-background-size: cover;
@@ -127,7 +127,7 @@ html, body {
     }
   }
 
-@media only screen and (max-width: 1500px){
+@media only screen and (max-width: 1000px){
   #container {
     background: image-url("bg-dark.jpg") no-repeat;
   }
@@ -156,9 +156,6 @@ html, body {
       height: 20em;
     }
   }
-}
-
-@media only screen and (max-width: 1000px){
   #right-grouping, #mob-logo, #mob-foot, #left-grouping{
     font-size: 10px !important;
     margin-top: 0 !important;

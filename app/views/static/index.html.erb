@@ -13,12 +13,12 @@
   <body>
     <div id="container">
     <div id="page-content">
-        <div id="mob-logo"><%= image_tag('logo.png', id: "mob-imglogo") %></div>
         <div id="left-grouping">
           <%= image_tag('logo.png', id: "logo") %>
           <div class="copy">Guven business group &copy; 2019 All Rights Reserved</div>
         </div>
         <div id="right-grouping">
+        <div id="mob-logo"><%= image_tag('logo.png', id: "mob-imglogo") %></div>
           <h1>Your Success Begins With Us</h1>
           <h2>we're lanching soon</h2>
           <div class="email-us">
@@ -31,8 +31,8 @@
           <div class="notification notice closeable alert alert-<%= key %>"><%= value %></div>
           <% end %>
           </div>
+          <div id="mob-foot"><div class="copy">Guven business group &copy; 2019 All Rights Reserved</div></div>
         </div>
-        <div id="mob-foot"><div class="copy">Guven business group &copy; 2019 All Rights Reserved</div></div>
       </div>
     </div>
   </body>
