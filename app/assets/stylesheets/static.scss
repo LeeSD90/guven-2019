@@ -16,13 +16,12 @@ html, body {
   background-size: cover;
   background-position: bottom, center;
   height: 100vh;
-  overflow: hidden;
+  overflow: auto;
 }
 
 
 #page-content {
   display: flex;
-  height: 95vh;
   width: 100vw;
   margin-bottom: 1.2em;
 }
