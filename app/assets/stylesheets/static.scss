@@ -47,15 +47,14 @@ html, body {
     flex-basis: 30%;
   }
   h1 {
-    font-size: 4.2rem;
-    line-height: 1em;
+    font-size: 500%;
     font-weight: 330;
     text-transform: uppercase;
   }
 
   h2 {
     font-weight: 300;
-    font-size: 3.3em;
+    font-size: 400%;
     margin-top: auto;
   }
 }
@@ -106,7 +105,7 @@ html, body {
     text-align: center;
   }
   .email-us{
-    font-size: medium;
+    font-size: 90%;
     margin-top: auto;
     input::placeholder {
       font-size: 1.1em;
@@ -138,7 +137,39 @@ html, body {
     }
   }
 
-@media only screen and (max-width: 1000px){
+  @media only screen and (max-width: 1600px){
+    #top-grouping{
+      h1{
+        font-size: 375%;
+      }
+      h2{
+        font-size: 250%;
+      }
+    }
+    #bottom-grouping{
+      .email-us{
+        font-size: 70%;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1300px){
+    #top-grouping{
+      h1{
+        font-size: 350%;
+      }
+      h2{
+        font-size: 200%;
+      }
+    }
+    #bottom-grouping{
+      .email-us{
+        font-size: 60%;
+      }
+    }
+  }
+
+@media only screen and (max-width: 1050px){
   .copy{
     display: none;
   }
